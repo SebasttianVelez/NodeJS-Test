@@ -1,0 +1,21 @@
+INSTALACIÓN
+
+despues de instalar mongodb y robomongo
+1- Instalar node
+2- npm init
+3- npm install express --save //save guarda dependepcia en mi proyecto actual
+4- npm install body-parser --save //el bodyparser sirve para convertir las peticiones que hago al backend a un objeto json usable por js
+5- npm  install connect-multiparty --save //el multiparty permite subir archivos a mi backend y recoge ficheros y guarda todo en el servidor IMPORTANTE (hay mas)
+6- npm install mongoose --save //mongoose es una libreria para trabajar con mongodb
+7- npm install nodemon --save-dev //es fundamental, cada vez que ejecute un servidor de nodejs se refresque el codigo 
+
+8- al crear el index.js añadir un script en el package.json : "start": "nodemon index.js"
+
+
+***********************************************************************************************
+
+CREAR BASE DE DATOS con robo3t
+
+//abrimos las consolas de mongo en archivos de programa
+1- crear base de datos con las colecciones
+2- conectar nodejs con mongo en el index.js
