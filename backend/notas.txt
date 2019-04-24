@@ -19,3 +19,27 @@ CREAR BASE DE DATOS con robo3t
 //abrimos las consolas de mongo en archivos de programa
 1- crear base de datos con las colecciones
 2- conectar nodejs con mongo en el index.js
+
+*********************************************************************************
+
+CREAR servidor
+
+1- crear el app.js con las instrucciones y luego conectar con el index
+2- ir al index y crear el host a donde estara el servidor LOCAL
+3- npm start y si prueba esta instalado
+
+**************************************************************************************
+
+CREAR RUTAS
+
+1- ir a app.js
+2- Realizar un app.get con una función de callback de req y res
+
+**************************************************************************************
+
+Metodos Backend
+
+1- GET --> Consultar a detalle algo
+2- POST --> Guardar NUEVOS recursos en un API O Backend 
+3- PUT --> Actualizar recursos
+4- DELETTE --> Borrar recursos
