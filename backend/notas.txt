@@ -43,3 +43,46 @@ Metodos Backend
 2- POST --> Guardar NUEVOS recursos en un API O Backend 
 3- PUT --> Actualizar recursos
 4- DELETTE --> Borrar recursos
+
+
+**************************************************************************************
+
+Modelos
+
+1- En mis colecciones tengo un project de la base de datos (se puede ver en robo3t)
+2- creo una carpeta de Models 
+3- En la carpeta creo archivos .js respecto a las conexiones, en este caso project.js
+4- import mongoose y creo un esquema como se muestra en el archivo
+5- la coleccion tiene unos atributos en el objeto, estos hay que cargarlos en una variable llamando Schema
+
+
+**************************************************************************************
+
+//Apuntes Interesantes sobre ingeniería de software
+
+Definicion MVC
+
+Es un patron de diseño de software que se encarga de separar la lógica de negocio de la interfaz
+de usuario (es la interfaz mas utilizada de internet)
+
+Facilita la mantenibilidad del codigo, la escalabilidad de la web y lo hace muy sencillo todo.
+
+El modelo que creamos es la logica de negocio o la parte que se conecta directamente a la 
+base de datos. 
+
+- EXISTEN DOS TIPOS DE Modelos
+
+1- Un modelo como una entidad o una referencia a una base de datos (Se utiliza para guardar info, consultar etc)
+2- Un modelo de consulta que son simplemente clases que acceden directamente a una base de datos, o una logica de negocio
+
+LA VISTA es la encargada de mostrar la información al usuario COMO ES UN API REST  Será simplemente los
+json que devolveremos en la aplicacion al usuario
+
+
+el CONTROLADOR es el intermediario entre la vista y el modelo, se encarga de controlar todas las interacciones
+del usuario y todas las peticiones que se hagan desde HTTP en este caso, ademas pide datos al modelo, devuelve informacion
+o hace procesos logicos.
+
+Consultar referencias sobre MVC
+
+**************************************************************************************

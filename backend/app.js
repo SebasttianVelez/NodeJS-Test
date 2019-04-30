@@ -35,18 +35,32 @@ app.use(bodyParser.json());
 /* La ruta pruebas-api tiene una funcion de callback
 recibe req-> request (lo que llega) y response (lo que devuelve)*/
 
-app.get('/pruebas-api', (req, res)=>{
+app.get('/', (req, res)=>{
     //el codigo 200 indica que esta bien
     //El send envia un mensaje en json
     res.status(200).send(
-        /*
-        {
-            menssage: 'Esta ruta es de prueba en mi API Restful con mongo y node'
-        }
-        */
+        
         "<h1>pagina de inicio</h1>"
     );
 })
+
+app.get('/-test', (req, res)=>{
+    res.status(200).send(
+        {
+            menssage: 'Esta ruta es de prueba en mi API Restful con mongo y node'
+        }
+    );
+});
+
+
+app.post('/test', (req, res)=>{
+    console.log(req.body.nombre); //recoger el nombre
+    res.status(200).send(
+        {
+            menssage: 'Esta ruta es de prueba en mi API Restful con mongo y node'
+        }
+    );
+});
 
 //hacer exportable el modulo app para ser cargado en el index.js
 module.exports = app;
