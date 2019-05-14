@@ -1,7 +1,7 @@
 'use strict'
 
 //Mongoose es el que se encarga de cargar los modelos
-var mogoose = require('mongoose');
+var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
@@ -11,7 +11,8 @@ var ProjectSchema = Schema({
     description: String,
     category: String,
     year: Number,
-    langs: [String]
+    langs: String,
+    image: String
 });
 
 
