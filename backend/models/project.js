@@ -1,5 +1,6 @@
 'use strict'
 
+//Mongoose es el que se encarga de cargar los modelos
 var mogoose = require('mongoose');
 
 var Schema = mongoose.Schema;
@@ -14,7 +15,7 @@ var ProjectSchema = Schema({
 });
 
 
-// para poder importarlo fuera de este fichero COMO MODELO
+// p ara poder importarlo fuera de este fichero COMO MODELO
 module.exports = mongoose.model('Project', ProjectSchema); 
 //tiene dos parametros, el primero es el nombre de mi entidad (que se guarda)
 //en la base de datos y de segundo el esquema.

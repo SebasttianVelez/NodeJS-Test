@@ -30,37 +30,48 @@ app.use(bodyParser.json());
 
 //Configurar CORS O cabeceras
 
+
+//Cargar archivo de rutas
+
+var project_routes = require('./routes/project');
+
 //rutas
 
 /* La ruta pruebas-api tiene una funcion de callback
 recibe req-> request (lo que llega) y response (lo que devuelve)*/
 
+/*Pruebas para hacer peticiones a la B DE DATOS
 app.get('/', (req, res)=>{
     //el codigo 200 indica que esta bien
     //El send envia un mensaje en json
     res.status(200).send(
         
         "<h1>pagina de inicio</h1>"
-    );
-})
-
-app.get('/-test', (req, res)=>{
-    res.status(200).send(
-        {
-            menssage: 'Esta ruta es de prueba en mi API Restful con mongo y node'
-        }
-    );
+        );
+    })
+    
+    app.get('/-test', (req, res)=>{
+        res.status(200).send(
+            {
+                menssage: 'Esta ruta es de prueba en mi API Restful con mongo y node'
+            }
+            );
 });
 
-
+//Petición por post!
 app.post('/test', (req, res)=>{
     console.log(req.body.nombre); //recoger el nombre
     res.status(200).send(
         {
             menssage: 'Esta ruta es de prueba en mi API Restful con mongo y node'
         }
-    );
-});
+        );
+    });
+    
+    */
 
+//Cargar la ruta en un middelware dentro de app (la del modulo y controlador)
+
+app.use('/', project_routes);
 //hacer exportable el modulo app para ser cargado en el index.js
 module.exports = app;
