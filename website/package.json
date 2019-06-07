@@ -1,0 +1,32 @@
+{
+  "name": "nwebsite",
+  "version": "1.0.0",
+  "description": "node website ",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sebasttianvelez/NodeJS-Test.git"
+  },
+  "keywords": [
+    "node",
+    "javascript"
+  ],
+  "author": "sebasttianvelez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebasttianvelez/NodeJS-Test/issues"
+  },
+  "homepage": "https://github.com/sebasttianvelez/NodeJS-Test#readme"
+}
